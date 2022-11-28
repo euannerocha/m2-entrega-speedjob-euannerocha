@@ -44,11 +44,20 @@ header>p{
     margin-bottom: 35px;
 }
 
+.divButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
 .button{
     border: 2px solid var(--color-white);
     border-radius: 32px;
     color: var(--color-white);
     width: 90%;
+    max-width: 380px;
     height: 33px;
     align-self: center;
     background-color: transparent;
@@ -68,13 +77,15 @@ main>h1{
 
 @media(min-width: 767px){
 
-header>div:nth-child(2){
+.divButtons{
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 12px;
 }
 
-.button{
+.divButtons>button{
     width: 176px;
 }
 
