@@ -2,8 +2,7 @@
 function renderCardsFront(array){
     let ulFrontendJobs = document.querySelector('.ulFrontendJobs')
     ulFrontendJobs.innerText = '';
-
-    for(let i=0; i < array.lenght; i++){
+    for(var i=0; i < array.length; i++){
         let liFront = document.createElement('li')
             let divHeaderCardFront = document.createElement('div')
                 let iconCardFront = document.createElement('p')
@@ -19,8 +18,8 @@ function renderCardsFront(array){
     titleCardFront.classList.add('titleCardFront')
     locationCardFront.classList.add('locationCardFront')
     jobDescriptionCardFront.classList.add('jobDescriptionCardFront')
-    tagWorkloadCardFront.classList.add('tag tagWorkloadCardFront')
-    tagModalityCardFront.classList.add('tag tagModalityCardFront')
+    tagWorkloadCardFront.classList.add('tagWorkloadCardFront')
+    tagModalityCardFront.classList.add('tagModalityCardFront')
 
     iconCardFront.innerText = 'G'
     titleCardFront.innerText = array[i].title
@@ -33,6 +32,7 @@ function renderCardsFront(array){
     ulFrontendJobs.append(liFront)
     liFront.append(divHeaderCardFront, jobDescriptionCardFront, tagWorkloadCardFront, tagModalityCardFront)
     divHeaderCardFront.append(iconCardFront, titleCardFront, locationCardFront)
+
  }
 }
 
