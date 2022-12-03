@@ -1,0 +1,269 @@
+body{
+    background-color: var(--color-application);
+}
+
+body>main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+body>main>h1{
+    margin-left: 20px;
+}
+
+.ulFrontendJobs{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 12px;
+}
+
+.liFont{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    height: 180px;
+    margin-bottom: 40px;
+    background-color: var(--color-white);
+    padding: 44px 24px 24px 24px;
+    align-content: center;
+    justify-content: flex-start;
+    position: relative;
+    border-radius: 8px;
+}
+
+.divHeaderCardFront{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    gap: 5px;
+}
+
+.iconCardFront{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    background-color: var(--color-dark);
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 100%;
+    color: var(--color-white);
+    top: 38px;
+    left: 24px;
+}
+
+.titleCardFront{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.locationCardFront{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.jobDescriptionCardFront{
+    margin-top: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.tagWorkloadCardFront{
+    position: absolute;
+    left: 24px;
+    bottom: 30px;
+    background-color: var(--color-tags);
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 8px 3px 8px;
+    color: var(--color-tagsText);
+    margin-top: 11px;
+    border-radius: 2px;
+}
+
+.tagModalityCardFront{
+    position: absolute;
+    left: 100px;
+    bottom: 30px;
+    background-color: var(--color-tags);
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 8px 3px 8px;
+    color: var(--color-tagsText);
+    border-radius: 2px;
+}
+
+@media(min-width: 768px){
+    body>main{
+        margin-left: 50px;
+    }
+
+    .ulFrontendJobs{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        width: 100%;
+        /* max-width: 1100px; */
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 12px;
+    }
+
+    .liFont{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 180px;
+        margin-bottom: 40px;
+        background-color: var(--color-white);
+        padding: 44px 24px 24px 24px;
+        align-content: center;
+        justify-content: flex-start;
+        position: relative;
+        border-radius: 8px;
+    }
+}
+
+/* // */
+
+.ulBackendJobs{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 12px;
+}
+
+.liBack{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    height: 180px;
+    margin-bottom: 64px;
+    background-color: var(--color-white);
+    padding: 44px 24px 24px 24px;
+    align-content: center;
+    justify-content: flex-start;
+    position: relative;
+    border-radius: 8px;
+}
+
+.divHeaderCardBack{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    gap: 5px;
+}
+
+.iconCardBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    background-color: var(--color-dark);
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 100%;
+    color: var(--color-white);
+    top: 38px;
+    left: 24px;
+}
+
+.titleCardBack{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.locationCardBack{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.jobDescriptionCardBack{
+    margin-top: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.tagWorkloadCardBack{
+    position: absolute;
+    left: 24px;
+    bottom: 30px;
+    background-color: var(--color-tags);
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 8px 3px 8px;
+    color: var(--color-tagsText);
+    margin-top: 11px;
+    border-radius: 2px;
+}
+
+.tagModalityCardBack{
+    position: absolute;
+    left: 100px;
+    bottom: 30px;
+    background-color: var(--color-tags);
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 8px 3px 8px;
+    color: var(--color-tagsText);
+    border-radius: 2px;
+}
+
+
+@media(min-width: 768px){
+    .ulBackendJobs{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        width: 100%;
+        /* max-width: 1100px; */
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 12px;
+    }
+
+    .liBack{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 180px;
+        margin-bottom: 40px;
+        background-color: var(--color-white);
+        padding: 44px 24px 24px 24px;
+        align-content: center;
+        justify-content: flex-start;
+        position: relative;
+        border-radius: 8px;
+    }
+}
